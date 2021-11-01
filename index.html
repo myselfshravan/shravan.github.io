@@ -22,7 +22,7 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="https://myselfshravan.github.io/shravan.github.io/" class="nav__logo">SHRAVAN</a>
+                    <a href="https://linktr.ee/shravan_revanna"target="_blank" class="nav__logo">SHRAVAN</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -39,18 +39,21 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+                
             </nav>
         </header>
+        <hr class="rounded">
 
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+                    <img src="assets/img/20211003_190800_50.png" alt="" class="home__img">
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
-                    <img src="assets/img/20211003_190800_50.png" alt="" class="home__img">
+            
                 </div>
             </section>
             
@@ -65,8 +68,95 @@
 
                     <div>
                         <p class="about__subtitle1">I'am <b>Shravan</b></p>
-                        <span class="about__profession">Passionate Website & App developer</span>
-                        <p class="about__text">A little about myself: I am pursuing my <br><b>Computer Science and Engineering (Spl. in AI and ML)</b> from <br><b><a href="http://www.msrit.edu/index.html"target="_blank">M S Ramaiah Institute of Technology</a></b>, Currently in my First-Year of B.Tech . As of now, I am focused on Web development, App development, and Artificial intelligence, but still I wish to explore other fields too.</p>
+                        <h1>
+                           
+                            <span class="text_1">Passionate Web Developer</span>
+                        
+                            <span class="text_2">Passionate Android Developer</span>
+                        </h1>
+
+
+
+
+
+                        
+                        <!--text animation-->
+
+                        <!--<div id="container">
+                            <div id="text"></div>
+                        </div>
+                        <script type="text/javascript">
+                        
+                        // List of sentences
+                         var _CONTENT = [ "Passionate Web Developer", "Passionate Android Developer" ];
+                        
+                        // Current sentence being processed
+                        var _PART = 0;
+                        
+                        // Character number of the current sentence being processed 
+                        var _PART_INDEX = 0;
+                        
+                        // Holds the handle returned from setInterval
+                        var _INTERVAL_VAL;
+                        
+                        // Element that holds the text
+                        var _ELEMENT = document.querySelector("#text");
+                        
+                        // Implements typing effect
+                        function Type() { 
+                            var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+                            _ELEMENT.innerHTML = text;
+                            _PART_INDEX++;
+                        
+                            // If full sentence has been displayed then start to delete the sentence after some time
+                            if(text === _CONTENT[_PART]) {
+                                clearInterval(_INTERVAL_VAL);
+                                setTimeout(function() {
+                                    _INTERVAL_VAL = setInterval(Delete, 50);
+                                }, 1000);
+                            }
+                        }
+                        
+                        // Implements deleting effect
+                        function Delete() {
+                            var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+                            _ELEMENT.innerHTML = text;
+                            _PART_INDEX--;
+                        
+                            // If sentence has been deleted then start to display the next sentence
+                            if(text === '') {
+                                clearInterval(_INTERVAL_VAL);
+                        
+                                // If last sentence then display the first one, else move to the next
+                                if(_PART == (_CONTENT.length - 1))
+                                    _PART = 0;
+                                else
+                                    _PART++;
+                                _PART_INDEX = 0;
+                        
+                                // Start to display the next sentence after some time
+                                setTimeout(function() {
+                                    _INTERVAL_VAL = setInterval(Type, 100);
+                                }, 200);
+                            }
+                        }
+                        
+                        // Start the typing effect on load
+                        _INTERVAL_VAL = setInterval(Type, 100);
+                    </script>-->
+
+
+
+
+
+
+
+                        <!--<div class="typewriter">    
+                            <h1>Passionate Web & Android developer</h1>
+                          </div>-->
+                        <!--<span class="about__profession">Passionate Web & Android developer</span>-->
+                        
+                        <p class="about__text">A little about myself: I am pursuing my <br><b>Computer Science and Engineering (Spl. in AI and ML)</b> degree from <br><b><a href="http://www.msrit.edu/index.html"target="_blank">M S Ramaiah Institute of Technology</a></b>, Currently in First-Year of B.Tech . As of now, I am focused on Web development, App development, and Artificial intelligence, but still I wish to explore other fields too.</p>
 
                         <div class="about__social">
                             <a href="https://www.linkedin.com/in/shravanrevanna" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
@@ -86,12 +176,14 @@
                 <div class="skills__container bd-grid">
                     <div class="skills__box">
                         <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Java</span>
                         <span class="skills__name">HTML</span>
                         <span class="skills__name">CSS</span>
                         <span class="skills__name">Javascript</span>
                         <span class="skills__name">Python</span>
-                        <span class="skills__name">Java</span>
                         <span class="skills__name">C++</span>
+                        <span class="skills__name">Flutter</span>
+                        <span class="skills__name">Dart</span>
                         <!--<span class="skills__name">C</span>-->
                         
                         <h3 class="skills__subtitle">Design</h3>
@@ -202,7 +294,7 @@
         <div class="content">
         
         <h3> Varin International School | ICSE</h3>
-        <p>High School | Science</p>
+        <p>High School | Science<br>Rank 1 in India in the year 2019, by the survey conducted by Education Today.</p>
       </a>
         <h4>2016-2019 | Completed</h4>
         </div>
@@ -220,17 +312,13 @@
                         <span class="contact__text1"><a href="mailto:shravanrevanna158@gmail.com">shravanrevanna@gmail.com</a></span>
 
                         <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+91 6645332665</span>
-                        <br><span class="contact__text1">Intentionally blurred </span>
+                        <span class="contact__text1"><a href="tel:9945332995">+91 9945-332995</a></span>
+                       
 
-                        <h3 class="contact__subtitle">ADDRESS</h3>
-                        <span class="contact__text">Shravan House
-                            <br>Fake Address 
-                            <br>Chandilahsa 578528</span>
-                            <br><span class="contact__text1">Intentionally blurred </span>
+                
                     </div>
 
-                    <form action="" class="contact__form">
+                    <!--<form action="" class="contact__form">
                         <div class="contact__inputs">
                             <input type="text" placeholder="Name" class="contact__input">
                             <input type="mail" placeholder="Email" class="contact__input">
@@ -239,7 +327,7 @@
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <span class="contact__text1">Submission not initialized, to Contact me get social link bellow</span>
                         <input type="submit" value="Submit" class="contact__button">
-                    </form>
+                    </form>-->
                 </div>
             </section>
         </main>
@@ -281,7 +369,11 @@
             </div>
             <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
 
-            <h1 class="credit">Designed with <i class="icon ion-heart" style="color: #e25555;"></i> by Shravan </h1>
+            <!--<h1 class="credit">Designed with <i class="icon ion-heart" style="color: #e25555;"></i> by Shravan </h1>-->
+            <h1 class="credit">Designed with  <svg class="heart" viewBox="0 0 32 29.6">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+              </svg>  by Shravan </h1>
             <!--<h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/shravanrevanna"> Shravan</a></h1>
             -->      
     </p> </footer>
