@@ -251,8 +251,15 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
+hr.rounded {
+    border-top: 3px solid rgba(255, 255, 255);
+    margin-bottom: 0%;
+  }
 
 /*===== NAV =====*/
 .nav{
@@ -312,7 +319,10 @@ img{
 /*===== HOME =====*/
 .home{
     position: relative;
-    background-color: var(--first-color);
+    background: #4e54c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     overflow: hidden;
 }
 .home__container{
@@ -339,6 +349,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
+    left: auto;
     width: 460px;
     
         
@@ -391,7 +402,7 @@ img{
 }
 .about__profession{
     display: block;
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-3);
 }
 .about__social-icon{
     font-size: 2.4rem;
@@ -516,7 +527,12 @@ img{
 
 /* ===== FOOTER=====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color:var(--dark-color);
+    
+}
+
+.footer__text{
+    color: #a1a1a1;
 }
 .footer__container{
     row-gap: 2rem;
@@ -695,5 +711,114 @@ img{
   text-decoration: none;}
 
 .emoji{vertical-align: middle;}
-
+.heart {
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 22px;
+    animation: pulse 1s ease infinite;
+  }
   
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+  
+ /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #697477;
+    width: auto;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    font-size: 1rem;
+    border-right: .15em solid #697477; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(60, end),
+      blink-caret .65s step-end infinite;
+      display: inline-block;
+    margin-bottom: var(--mb-4)
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { max-width: 0; }
+    to { max-width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:#697477 }
+  }
+
+/*type and retype*/
+
+.text_1 {
+    animation: text1;
+   
+   
+  }
+  .text_2 {
+    animation: text2;
+   
+  }
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    font-size: medium;
+    animation-duration: 15s;
+    animation-timing-function: steps(15, end);
+    animation-iteration-count: infinite;
+  }
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 10.2em;
+  }
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 17em;
+    }
+  }
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 14.5em;
+    }
+  }
+  h6 {
+      font-size: medium;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
